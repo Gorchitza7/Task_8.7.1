@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Угадайка</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body class="bg-light">
+  <h1>Игра "Угадайка"</h1>
+  <div class="container bg-light">
+    <div class="row game-card align-items-center">
+      <div class="col col-md-4 offset-md-4">
+        <div class="card text-center">
+          <div class="card-header bg-primary">
+            <p class="m-0 text-uppercase text-white numberItem">
+              Вопрос №<span id="orderNumberField">5</span>
+            </p>
+          </div>
+          <div class="card-body ">
+            <div class="row no-gutters">
+              <div class="col">
+                <h3 class="card-title m-0 answerFieldCss">
+                  <span id="answerField">Вы загадали число 5?</span>
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="card-body groupMinMax">
+            <div class="btn-group">
+                <div class="card-body groupMinMax">
+              <button class="btn btn-outline-info" id="btnLess">
+                 меньше <br />
+              </button>
+              <button class="btn btn-outline-success btn-lg" id="btnEqual">
+                Верно!
+              </button>
+              <button class="btn btn-outline-info" id="btnOver">
+                больше<br />
+              </button>
+            </div>
+            </div>
+          </div>
+          <div class="card-body groupAdd">
+            <p class="valueRange">Введите числа сначала в верхнюю границу, а потом нижнюю, для начала игры</p>
+            <p class="makeWishNumber"><span id="makeWishNumber">проверка</span></p>
+            <form class="form-inline formValue">
+              <div class="form-group">
+                <label for="formGroupInput">От</label>
+                <input type="text" class="form-control" id="valueInputMin" placeholder="0" />
+              </div>
+              <div class="form-group">
+                <label for="formGroupInput2">До</label>
+                <input type="text" class="form-control" id="valueInputMax" placeholder="100" />
+              </div>
+            </form>
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-block btn-link font-weight-bold text-danger buttonFurther" id="btnFurther">Идём
+              дальше</button>
+            <button class="btn btn-block btn-link font-weight-bold text-danger buttonStart" id="btnStart">Начинаем
+              игру</button>
+            <button class="btn btn-block btn-link font-weight-bold text-danger buttonReplay" id="btnReplay">Играть
+              заново</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+.game-card {
+    height: 100vh;
+    font-family: "Open Sans", monospace;
+    background-color: lightsteelblue;
+    display: flex;
+    align-items: center;
+  }
+  
+  .card {
+    width: 300px;
+    margin: auto; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+    background-color: #34495e; 
+    color: #ecf0f1; 
+  }
+  
+  .card-body {
+    padding: 10px; 
+  }
+  
+  .form-group {
+    margin-inline: auto;
+    padding: 5px;
+    width: auto;
+  }
+  
+  label {
+    margin: 0 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: lightslategray;
+  }
+
+  body {
+    background-color: #2c3e50; 
+    color: lightsteelblue; 
+  }
+  
+  .card-header {
+    background-color: #2980b9; 
+  }
+
+  .btn-group {
+    flex-direction: column; 
+  }
+
+  .btn {
+    margin: 5px 0; 
+  }
+
+  .card-footer {
+    padding: 10px; 
+  }
+
+  .buttonFurther, .buttonStart, .buttonReplay {
+    text-decoration: none !important;
+    background-color: lightblue;
+    color: #fff;
+    border: 1px solid lightblue;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .groupMinMax {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .btn-group button {
+    margin: 0 5px; 
+  }
+  
+  .buttonFurther:hover {
+    background-color: lightyellow;
+    color: #fff;
+  }
+  .buttonStart:hover {
+    background-color: lightyellow;
+    color: #fff;
+  }
+  .buttonReplay:hover {
+    background-color: lightyellow;
+    color: #fff;
+  }
+  
+  .buttonFurther, .buttonStart, .buttonReplay {
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  
+  .btn-outline-info {
+    border-color: #3498db; 
+    color: #3498db; 
+  }
+  
+  .btn-outline-info:hover {
+    background-color: #3498db; 
+    color: #ecf0f1; 
+  }
+  
+  .btn-outline-success {
+    border-color: #2ecc71;
+    color: #2ecc71;
+  }
+  
+  .btn-outline-success:hover {
+    background-color: #2ecc71;
+    color: #ecf0f1;
+  }
+  
+  .btn-link {
+    color: #e74c3c; 
+  }
+  
+  .btn-link:hover {
+    color: #c0392b; 
+  }
